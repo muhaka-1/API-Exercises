@@ -1,0 +1,12 @@
+services:
+  api:
+    build: ./api
+    ports:
+      - "5001:5000"
+
+  client:
+    build: ./client
+    depends_on:
+      - api
+    profiles:
+      - exercise
