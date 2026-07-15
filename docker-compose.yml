@@ -2,7 +2,7 @@ services:
   api:
     build: ./api
     ports:
-      - "5001:5000"
+      - "5001:5001"
     container_name: novastore_api
     
   client:
